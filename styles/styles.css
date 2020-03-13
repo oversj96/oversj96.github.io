@@ -1,0 +1,92 @@
+* { margin: 0;}
+
+/* Mobile First Approach */
+
+body { 
+    
+    background: rgba(255, 0, 0, .25);
+    
+}
+
+header { 
+    
+    background: rgba(0, 0, 0, .25); 
+    margin-bottom: 10px; 
+    height: 50px
+        
+}
+
+section { 
+    
+    background: rgba(0, 0, 0, .25); 
+    margin-bottom: 10px; 
+    height: 500px
+        
+}
+
+aside { 
+    
+    background: rgba(0, 0, 0, .25); 
+    margin-bottom: 10px; 
+    height: 500px; 
+    display: none;
+    
+}
+
+footer { 
+    
+    background: rgba(0, 0, 0, .25); 
+    height: 50px
+        
+}
+
+/* Applies to any device with screen width that is '>= 768px' */
+
+@media screen and (min-width: 768px) {
+    
+    body { 
+        
+        background: rgba(0, 255, 0, .25);
+        
+    }
+    
+    aside {
+        
+        display: block;
+        
+    }
+    
+}
+
+/* Applies to any device with screen width that is '>= 1200px' */
+
+@media screen and (min-width: 1200px) {
+    
+    body { 
+        
+        background: rgba(0, 0, 255, .25);
+        
+    }
+    
+    section {
+        
+        float: left;
+        width: 69%;
+        margin-right: 10px
+        
+    }
+    
+    aside {
+        
+        float: right;
+        width: 30%
+        
+    }
+    
+    footer {
+        
+        clear: both;
+        
+    }
+    
+}
